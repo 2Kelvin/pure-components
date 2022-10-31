@@ -1,0 +1,9 @@
+body {
+    height: 100vh;
+    margin: 0;
+}
+
+.guests {
+    margin: auto;
+    justify-content: center;
+}
