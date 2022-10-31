@@ -44,8 +44,7 @@ root.render(React.createElement(App, null));
 // ***MAIN POINT HERE!! Do Not change/ modify any preexisting variable (existing outside the function) inside the component function & then use it to render the JSX
 // this outside variables available globally to other calculations could lead to confusing results in our JSX components
 // ... they give unclear results
-// to fix this, if you really want to use the global variable inside the component....
-// ...just pass it to the component as a 'prop'
+// to fix this, just pass in props to the component 
 // now the component is pure as the results will always be consistent with the value you pass in as the prop
 
 // each component should only “think for itself”
