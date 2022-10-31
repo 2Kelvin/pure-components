@@ -2,7 +2,7 @@ function Cup(_ref) {
     var guest = _ref.guest;
 
     return React.createElement(
-        "h2",
+        "p",
         null,
         "Tea cup for guest #",
         guest

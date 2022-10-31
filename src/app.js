@@ -1,5 +1,5 @@
 function Cup({ guest }) {
-    return <h2>Tea cup for guest #{guest}</h2>
+    return <p>Tea cup for guest #{guest}</p>
 }
 
 function TeaSet() {

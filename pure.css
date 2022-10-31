@@ -4,6 +4,7 @@ body {
 }
 
 .guests {
-    margin: auto;
+    display: grid;
     justify-content: center;
+    margin-top: 12em;
 }
