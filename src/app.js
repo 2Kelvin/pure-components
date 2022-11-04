@@ -1,19 +1,25 @@
-function Cup({ guest }) {
-    return <p>Tea cup for guest #{guest}</p>
-}
-
-function TeaSet() {
+function ChaiRecipe({ drinkers }) {
     return (
-        <div className="guests">
-            <Cup guest={1} />
-            <Cup guest={2} />
-            <Cup guest={3} />
-        </div>
+        <ol>
+            <li>Boil {drinkers} cups of milk.</li>
+            <li>Add {2 * drinkers} spoons of masala spices.</li>
+            <li>Remove from heat and add {drinkers} spoons of tea.</li>
+        </ol>
     );
 }
 
 export default function App() {
-    return <TeaSet />;
+    return (
+        <section>
+            <h1>Spiced Chai Recipe</h1>
+            <h2>For one</h2>
+            <ChaiRecipe drinkers={1} />
+            <h2>For a small gathering</h2>
+            <ChaiRecipe drinkers={4} />
+            <h2>For a large party</h2>
+            <ChaiRecipe drinkers={10} />
+        </section>
+    );
 }
 
 // react connection

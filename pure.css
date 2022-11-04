@@ -3,8 +3,8 @@ body {
     margin: 0;
 }
 
-.guests {
+section {
     display: grid;
     justify-content: center;
-    margin-top: 12em;
+    margin-top: 8em;
 }

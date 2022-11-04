@@ -1,26 +1,61 @@
-function Cup(_ref) {
-    var guest = _ref.guest;
+function ChaiRecipe(_ref) {
+    var drinkers = _ref.drinkers;
 
     return React.createElement(
-        "p",
+        'ol',
         null,
-        "Tea cup for guest #",
-        guest
-    );
-}
-
-function TeaSet() {
-    return React.createElement(
-        "div",
-        { className: "guests" },
-        React.createElement(Cup, { guest: 1 }),
-        React.createElement(Cup, { guest: 2 }),
-        React.createElement(Cup, { guest: 3 })
+        React.createElement(
+            'li',
+            null,
+            'Boil ',
+            drinkers,
+            ' cups of milk.'
+        ),
+        React.createElement(
+            'li',
+            null,
+            'Add ',
+            2 * drinkers,
+            ' spoons of masala spices.'
+        ),
+        React.createElement(
+            'li',
+            null,
+            'Remove from heat and add ',
+            drinkers,
+            ' spoons of tea.'
+        )
     );
 }
 
 export default function App() {
-    return React.createElement(TeaSet, null);
+    return React.createElement(
+        'section',
+        null,
+        React.createElement(
+            'h1',
+            null,
+            'Spiced Chai Recipe'
+        ),
+        React.createElement(
+            'h2',
+            null,
+            'For one'
+        ),
+        React.createElement(ChaiRecipe, { drinkers: 1 }),
+        React.createElement(
+            'h2',
+            null,
+            'For a small gathering'
+        ),
+        React.createElement(ChaiRecipe, { drinkers: 4 }),
+        React.createElement(
+            'h2',
+            null,
+            'For a large party'
+        ),
+        React.createElement(ChaiRecipe, { drinkers: 10 })
+    );
 }
 
 // react connection
